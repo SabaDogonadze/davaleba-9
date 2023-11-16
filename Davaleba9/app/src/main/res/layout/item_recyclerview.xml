@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="150dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="@color/milk"
+        app:cardCornerRadius="30dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/btnLike"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/recyclerview_likebutton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivGirl"
+                android:layout_width="80dp"
+                android:layout_height="230dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toEndOf="@+id/btnLike"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="11dp"
+                android:layout_height="10dp"
+                android:background="@drawable/heart"
+                app:layout_constraintBottom_toBottomOf="@id/btnLike"
+                app:layout_constraintEnd_toEndOf="@+id/btnLike"
+                app:layout_constraintStart_toStartOf="@+id/btnLike"
+                app:layout_constraintTop_toTopOf="@+id/btnLike">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNameText"
+        android:layout_width="100dp"
+        android:layout_height="17dp"
+        android:textSize="14sp"
+        android:text="Belt suit blazer"
+        app:layout_constraintTop_toBottomOf="@id/cardView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="28dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPrice"
+        android:layout_width="100dp"
+        android:layout_height="17dp"
+        android:textSize="14sp"
+        android:text="$120"
+        app:layout_constraintTop_toBottomOf="@id/tvNameText"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="28dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
